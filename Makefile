@@ -8,3 +8,6 @@ precommit-reset:
 	@rm -rf ~/.cache/pre-commit
 	@poetry run pre-commit clean
 	@poetry run pre-commit install --install-hooks
+
+test:
+	@poetry run pytest
